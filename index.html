@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Email-Dadi JS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+    
+    <!-- REPO: js-mail-dadi
+    GOAL:
+    1 - Chiedi all'utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato
+    2 - Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
+    NOTE:
+    Come detto in classe potete fare entrambi gli esercizi all'interno dello stesso file, commentando il codice dell'esercizio gia' svolto di volta in volta -->
+
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <h1 id="check">Email-Dadi js</h1>
+        </div>
+    </div>
+    
+
+
+<script type="text/javascript">
+
+// // esercizio 1 
+//     var emailIndex = ['giovanni@gmail.it', 'giovanni@gmail.com', 'giovanni@gmail.uk'];
+//     var emailUser = prompt('enter you email');
+
+//     for (var email = 0; email < emailIndex.length; email++) {
+//       var login = emailIndex[email];
+      
+//       if (login == emailUser) {
+//         document.getElementById('check').innerHTML = 'Correct email';
+
+
+//       }
+//     }
+
+
+// esercizio 2
+// !!!CONSOLE ONLY!!!
+    var min = 1;
+    var max = 7 - min;
+    var rndUser = Math.floor(Math.random() * max  + min );
+    var rndBot = Math.floor(Math.random() * max  + min );
+
+     if(rndUser > rndBot){
+       console.log('You Win!');
+
+     }else if(rndUser < rndBot){
+       console.log('You Lose');
+
+     }else{
+      console.log("It's a Draw");
+    }
+
+</script>
+</body>
+</html>
